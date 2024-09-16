@@ -1,10 +1,4 @@
 /**
-  You need to create a HTTP server in Node.js which will handle the logic of an authentication server.
-  - Don't need to use any database to store the data.
-
-  - Save the users and their signup/login data in an array in a variable
-  - You can store the passwords in plain text (as is) in the variable for now
-
   The expected API endpoints are defined below,
   1. POST /signup - User Signup
     Description: Allows users to create an account. This should be stored in an array on the server, and a unique id should be generated for every new user that is added.
@@ -32,7 +26,6 @@
 const express = require("express")
 const PORT = 3000;
 const app = express();
-// write your logic here, DONT WRITE app.listen(3000) when you're running tests, the tests will automatically start the server
 
 var users = [];
 
